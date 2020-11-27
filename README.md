@@ -6,8 +6,9 @@ To decide what services will back it up, we will analyze the write and read prof
 
 __For the write pattern:__ 
 
-*	We are expecting streaming data from the devices in an append mainly manner. *throughput/sec ?*
-* We are also ingesting data in batches *business reason? different devices? can we have both streaming and batch?*
+*	We will be collecting XX metrics from XX number of devices with an interval of XX seconds. *FEEDBACK NEEDED: a small, medium, large deployment has different requirements in the ingestion ?*
+* We are expecting streaming data from the devices in an append mainly manner. *FEEDBACK NEEDED:throughput/sec?*
+* We are also ingesting data in batches *FEEDBACK NEEDED:business reason? different devices? can we have both streaming and batch?*
 *	Capability to manage the devices centrally to update the firmware, reboot, or configure the desired state. 
 *	Generate notifications in the event of detecting a warning condition.
 
