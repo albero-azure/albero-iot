@@ -68,8 +68,7 @@ Azure IoT Edge itself is also downloading containerized applications from Azure 
 
 On the cloud side, we examine the write and read profiles for the telemetry data.
 
-![albero iot decision tree- connected factory](media/alberoiot-factory.png "Decision tree Connected Factory")
-
+![albero iot decision tree- connected factory](media/DT Shared - iot-usecase.png "Decision tree Connected Factory")
 
 For the write, things are straight-forward: we need to ingest streaming telemetry data so we will leverage Azure IoT Hub as the IoT gateway. 
 
