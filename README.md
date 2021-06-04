@@ -94,7 +94,7 @@ Data is forwarded into a durable, cold storage solution into Azure Storage. This
 So, after all, we would end up in the following architecture. 
 
 
-![high level architecture connected factory](media/alberoiot-fact-arch.png "Decision tree Connected Factory")
+![high level architecture connected factory](media/alberoiot-fact-arch.png "Connected Factory high level architecture")
 
 __Closing__
 
