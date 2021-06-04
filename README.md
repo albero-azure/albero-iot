@@ -8,9 +8,12 @@ For more information about the Albero project:
 
 ### Disclaimer
 The Albero Decision Tree is:
+
 - Map of the Azure Data Services with the main goal to help you to navigate among them and understand their strengths and weaknesses.
 - Supplementary material to the officially published Microsoft documentation helping you to define and shape your thought process around selection of the certain data technologies and using them together in your solutions.
+
 This Decision Tree is not:
+
 - A Definitive Guide to selection of Data Technologies.
 - Business / politics related document. All the criteria we were using are purely technical.
 - Not a pattern or use-case focused document.
@@ -73,15 +76,19 @@ For the write, things are straight-forward: we need to ingest streaming telemetr
 Once the data is ingested, we have different read requirements that we’ll see separately:
 
 -	Alerts for systems and people
+
 To generate alerts and notifications we will leverage Service Bus and Logic Apps. As the process layer between the write and read path, we will use a complex event processor, Azure Stream Analytics, to transform the data and apply time-based rules.
 
 -	Provide a knowledge graph of the factory environment and manage the current state of the machine data.
+
 For this we will use Digital Twins. The updates and queries to the assets will run in an AKS cluster. 
 
 -	Store and analyze historical telemetry time-series data
+
 The time-series data, will be stored to Azure Data Explorer as it allows management of the schema. The data will be ingested from Azure Stream Analytics leveraging Event Hub.  
 
 -	Allow data scientists to explore the collected data and build machine learning algorithms which can then be used to do real time or batch scoring for things like forecasting, anomaly detection and predictive maintenance and offer data ready to be consumed via custom UI applications and Power Bi reports.
+
 Data is forwarded into a durable, cold storage solution into Azure Storage. This will be used by Azure Synapse Analytics for data analysis and serving PowerBI reports to users. It will also be used by Azure Kubernetes Services to host a series of micro-services for Machine Learning algorithms inferencing and APIs for interaction with the UI layer. 
 
 So, after all, we would end up in the following architecture. 
