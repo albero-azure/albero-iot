@@ -35,7 +35,7 @@ Focusing on read/write patterns for data, which in IoT scenarios is mostly about
 - __Low power/LoRaWAN__ types of sensors: this scenario is where devices are very low powered and send data in size of bytes, a few times per day.
 When we look at these types of use cases, the actual domain of the use case has less influence than the data write, processing and read patterns including frequency, sizes of messages and latency requirements. So going forward when building the decision tree, we focused fully on the patterns but still referred to our use cases to validate our decision tree was applicable. 
 
-![albero iot decision tree](media/alberoiot.png "Decision tree")
+![albero iot decision tree](media/DTIOT.png "Decision tree")
 
 To help you navigate, the decision tree consists of three layers: The <span style="color:lightblue">blue</span> for the write path, the <span style="color:yellow">yellow</span> layer for the processing, and the <span style="color:green">green</span> layer that shows how the data is read and consumed. 
 
