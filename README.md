@@ -81,7 +81,7 @@ To generate alerts and notifications we will leverage Service Bus and Logic Apps
 
 -	Provide a knowledge graph of the factory environment and manage the current state of the machine data.
 
-For this we will use Digital Twins. The updates and queries to the assets will run in an AKS cluster. 
+For this we will use Azure Digital Twins. The updates and queries to the assets will run in an AKS cluster. 
 
 -	Store and analyze historical telemetry time-series data
 
